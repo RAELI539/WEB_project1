@@ -32,8 +32,8 @@ body.dark-mode .card {
 
 /* Light background component adjustment */
 body.dark-mode .bg-light {
-    background-color: #1e1e1e !important;
-    color: #f8f9fa !important;
+    background-color: #c68e8e !important;
+    color: #9ab9d7 !important;
 }
 
 /* Text class overwrites for dark context */

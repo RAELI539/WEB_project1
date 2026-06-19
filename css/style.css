@@ -1,0 +1,83 @@
+/* --- Global Structural Adjustments --- */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Push footer perfectly to the bottom */
+main {
+    flex: 1 0 auto;
+}
+
+/* --- Dark Mode Variables & Class Overwrites --- */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+}
+
+/* Cards dark adjustment */
+body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    border-color: #2a2a2a !important;
+    color: #f8f9fa !important;
+}
+
+/* Light background component adjustment */
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+    color: #f8f9fa !important;
+}
+
+/* Text class overwrites for dark context */
+body.dark-mode .text-dark {
+    color: #ffffff !important;
+}
+
+body.dark-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Form input adjustments under Dark Mode */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2d2d2d !important;
+    border-color: #444444 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #777777 !important;
+}
+
+/* Accordion dark theme adjustment */
+body.dark-mode .accordion-item {
+    background-color: #1e1e1e !important;
+    border-color: #2a2a2a !important;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #252525 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+/* Social link aesthetics */
+.d-inline-flex a {
+    font-size: 1.25rem;
+    transition: color 0.2s ease;
+}
+.d-inline-flex a:hover {
+    color: #198754 !important;
+}

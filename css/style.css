@@ -81,3 +81,11 @@ body.dark-mode .accordion-button:not(.collapsed) {
 .d-inline-flex a:hover {
     color: #198754 !important;
 }
+
+/* Smooth hover zoom effect for the gallery images */
+.img-hover-card img {
+    transition: transform 0.3s ease;
+}
+.img-hover-card:hover img {
+    transform: scale(1.05);
+}
